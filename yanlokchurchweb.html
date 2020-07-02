@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Yan Lok Church</title>
+        <style>
+            
+            body {
+                min-width:900px; 
+                margin: 0;
+            }
+            :root {
+                --topnav-height: 180px;
+            }
+            .head-container {
+                webkit-box-align: center;
+                overflow: hidden;
+                display: flex;
+                flex-direction: column;
+                flex-wrap: wrap;
+                background-color: rgb(240, 242, 169);
+                font-family: DFKai-SB;
+                height: var(--topnav-height);
+            }
+            .head-container a {
+                text-decoration: none;
+            }
+            .site-header {
+                padding: 20px;
+                min-width: 400px;
+            }
+            .site-header a {
+                color: rgb(89, 194, 37);
+                font-size: 35px;
+            }
+            .topnav {
+                font-size: 20px;
+            }
+            .site-topnav a {
+                float: left;
+                color: rgb(0, 0, 0);
+                text-align: center;
+                padding: 14px 16px;
+                
+            }
+            .site-topnav a:hover {
+                -ms-transform: rotate(15deg); /* IE 9 */
+                transform: rotate(15deg);
+            }
+            .mobile-topnav {
+                display: none;
+            }
+            #icon2 {
+                margin-left: auto;
+                height: var(--topnav-height);
+            }
+            /*
+            @media only screen and (max-width: 1340px) {
+                .site-topnav {
+                    display: none;
+                }
+                .mobile-topnav {
+                    display: block;
+                    float: right;
+                }
+            }   
+            */
+        </style>
+        
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>        
+        <script>
+            $(function(){
+                $("#home").load("test.html"); 
+            });
+        </script>
+    </head>
+    <body>
+        <div class="head-container">            
+            <div class="site-header">
+                <a href="#header">浸信宣道會恩樂堂<br><span style="font-size:18px">Conservative Baptist Yan Lok Church Limited</span></a>
+            
+            </div>
+            <div class="topnav">
+                <div class="site-topnav">
+                    <a href="#home">首頁</a>
+                    <a href="#about">關於教會</a>
+                    <a href="#worship">主日講道/週刊</a>
+                    <a href="#activities">活動花絮</a>
+                    <a href="#share">分享</a>
+                    <a href="#news">教育部</a>
+        
+                    <a href="#contact">聯絡我們</a>
+                </div>
+                <div class="mobile-topnav">
+                    
+                </div>
+                
+            </div>
+            <img id="icon2" src="slogan2.png" alt="Girl in a jacket">
+        </div>
+        <div id="home"></div>
+        <!--
+            <frame height="300px" width="100%" src="demo_iframe.htm" name="iframe_a">
+                
+            </iframe>
+            -->
+            
+            
+    </body>
+</html>
